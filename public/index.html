@@ -14,20 +14,20 @@
   <nav class="text-white">
      <div class="w-screen bg-purple-600 pb-3">
          <div class="flex w-screen items-center  justify-center text-lg">
-            <div class="flex  w-1/3 justify-center px-1.5">
+            <div class="flex  w-1/4 justify-center ">
             <img id="" style=" height: 4.7rem; width: 4.7rem" src="img/wclogo1.png"></img> 
             <p class=" pt-6">An IBM Business</p>
             </div>
-            <div class="flex justify-center px-1.5 pt-6 w-1/3 " >
-                <div class="flex w-3/4 lg:w-1/2 h-full bg-purple-400 rounded-full j">
+            <div class="flex justify-center  pt-6 w-1/2 " >
+                <div class="flex w-1/2 lg:w-1/2 h-full bg-purple-400 rounded-full j">
                     <input type="search" class=" min-w-0  text-center placeholder-white bg-purple-400 text-sm  m-2.5 w-60 " type="text" placeholder="Search City Or Zip Code">
-                    <button class="pl-10 float-right pr-3" ><i class="fas fa-search"></i></button>
+                    <button class=" float-right pr-1" ><i class="fas fa-search"></i></button>
                 </div>
             </div> 
-            <div class="flex w-  1/3  items-end space-x-5">   
+            <div class="flex  lg:w-1/4 overflow-hidden items-end space-x-5">   
             <button class=""><i class="fas fa-globe-americas"></i> US | F <i class="fas fa-caret-down"></i></button>
-            <button class=" bg-white text-blue-800 rounded-full p-1 text-sm">Go Premium</button>
-            <button class=""><i class="fas fa-bars inline text-white"></i></button>
+            <button class=" bg-white text-blue-800 rounded-full p-0.5 text-sm">Go Premium</button>
+            <button class=""><i class="fas fa-bars text-3xl  inline text-white"></i></button>
         </div>
       </div>
      </div>
@@ -64,22 +64,31 @@
 
 
         <div class="main">
-          <div class="xl:pl-56 grid grid-cols-1 gap-2 p-3 float-left w-3/5 ">
-            <div class="bg-white p3 rounded">
-              <h2>Bloomington, IN Weather</h1>
-              <p>As of 10:21 am EDT</p>
-              <h1>74°</h1>
-              <p>Cloudy</p>
-              <p>18% chance of rain through 11 am</p>
-              <i></i>
-              <p>77°/68°</p>
+          <div class=" grid grid-cols-1 gap-1 p-3 pr-1 float-left w-3/4   lg:w-2/3 ">
+            <div class="bg-indigo-500 text-white  rounded-md p-4 lg:p-6">
+              <div class="float-left">
+              <h2 class="text-xl ">Bloomington, IN Weather</h1>
+              <p class="text-gray-300 text-sm lg:text-base">As of 10:21 am EDT</p>
+              <h1 class="text-6xl lg:text-8xl">74°</h1>
+              <p class="font-bold text-base  lg:text-2xl ">Cloudy</p>
+              <p class="text-sm lg:text-lg">18% chance of rain through 11 am</p>
+              
             </div>
+            <div class= "float-right">
+              <i class="fas fa-cloud pl-2.5 pt-20 text-3xl lg:text-5xl"></i>
+              <p class="font-bold w-1/5 text-base lg:text-2xl">77°/68°</p>
+            </div>
+            </div>
+      
             <div class="bg-white p3 rounded">
-              <h2>Today's Forecast for Bloomington, IN</h2>
-              <div>
-                Flexbox?
-              </div>
-              <button>Next Hours</button>
+              <h2 class="text-xl">Today's Forecast for Bloomington, IN</h2>
+              <ul>
+              <li class="">Morning</li>
+              <li class="">Afternoon</li>
+              <li class="">Evening</li>
+              <li class="">Overnight</li>
+              </ul>
+              <button class="bg-blue-700 text-white rounded-xl p-2 text-xs font-bold text-left">Next Hours</button>
             </div>
 
             <div class="bg-white p3 rounded">
@@ -104,12 +113,14 @@
             <div class="bg-white p3 rounded">8</div>
           </div>
 
-          <div class="xl:pr-56 grid grid-cols-1 gap-2 p-3  w-2/5 float-right">
-            <div class="bg-white p3 rounded">
-              <h2> Track Coronavirus in your County</h2>
-              <img> </img>
-              <caption></caption>
-              <button></button>
+          <div class=" grid grid-cols-1 gap-2 p-3 pl-1 w-1/4  lg:w-1/3 float-right">
+            <div class="bg-white p-3 rounded text-left justify-center items-center ">
+              <h2 class="text-lg font-bold p-3 overflow-hidden"> Track Coronavirus in your County</h2>
+              <div class="p-2 pt-0 w-full overflow-hidden">
+              <img src="/public/img/COVID1112.webp" alt="Image of Weather Channel video" class=" md:w-80 md:h-50 w-full rounded">
+              <a class="text-base ">Check out our Interactive Map and Informational Hub </a>
+              </div>
+              <button class="bg-blue-700 text-white rounded-xl p-2 text-xs font-bold text-left">See More</button>
             </div>
             <div class="bg-white p3 rounded">
               <h2> Air Quality Index
